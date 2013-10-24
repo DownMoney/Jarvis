@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sentences>
+  <Sentence type="greeting">
+    <Phrase>good morning {userName}</Phrase>
+    <Phrase>hello {userName}</Phrase>
+    <Phrase>how are you, {userName}</Phrase>
+  </Sentence>
+  <Sentence type="response">
+    <Phrase>i am happy to hear that</Phrase>
+    <Phrase>awesome</Phrase>
+  </Sentence>
+  <Sentence type="howareyou">
+    <Phrase>i am well thank you {userName}</Phrase>
+    <Phrase>i am feeling good, you?</Phrase>
+  </Sentence>  
+  <Sentence type="rest">
+    <Phrase>no problem {pronoun}</Phrase>
+    <Phrase>happy to help {pronoun}</Phrase>
+  </Sentence>
+  <Sentence type="attention">
+    <Phrase>how can i help?</Phrase>
+    <Phrase>what can i help you with today {pronoun}?</Phrase>
+    <Phrase>what do you want me to do?</Phrase>
+  </Sentence>
+  <Sentence type="movies">
+    <Phrase>what film would you like to watch</Phrase>
+    <Phrase>i see that you are going to relax now, which film would you like to see</Phrase>
+    <Phrase>great choice {pronoun}, which film would you like to watch</Phrase>
+  </Sentence>
+  <Sentence type="alarm">
+    <Phrase>no problem {pronoun}, what time would you like to set it to</Phrase>
+  </Sentence>
+  <Sentence type="breakfast">
+    <Phrase>cereal</Phrase>
+  </Sentence>
+</Sentences>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="Jarvis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Jarvis" Height="80" Width="1280" Loaded="Window_Loaded_1" Topmost="True" ResizeMode="NoResize" Background="#2e323d" x:Name="mainWindow" BorderBrush="Black" BorderThickness="0" AllowsTransparency="True" WindowStyle="None" Opacity="1.0">
+
+    <Grid x:Name="mainGrid">
+        <Border Width="200" HorizontalAlignment="Left" BorderBrush="#3f434e" BorderThickness="0,0,1,0">
+            <Border x:Name="colBorder" Width="200" HorizontalAlignment="Left" BorderBrush="#FF0051FF" BorderThickness="0,0,0,2">
+                <Grid x:Name="sideGrid" Width="200" HorizontalAlignment="Left">
+                    <TextBlock x:Name="menuTxt" Foreground="#dee1e8" FontFamily="Kozuka Gothic Pr6N EL" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" Text="home" FontWeight="Thin" ></TextBlock>
+                </Grid>
+            </Border>
+        </Border>
+        <Grid x:Name="recoDisplay" MouseLeftButtonUp="recoDisplay_MouseLeftButtonUp" MouseLeftButtonDown="recoDisplay_MouseLeftButtonDown">
+            <TextBlock x:Name="recoTxt" Foreground="#dee1e8" FontFamily="Kozuka Gothic Pr6N EL" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Text="rrr" FontWeight="Thin"/>
+           
+            <TextBox x:Name="inputBox" Foreground="#dee1e8" FontFamily="Kozuka Gothic Pr6N EL" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Text="" FontWeight="Thin" Width="600" Height="78" BorderThickness="0,0,0,2" BorderBrush="#FF0051FF" Visibility="Hidden" Margin="0,-8,0,10" Background="{x:Null}" CaretBrush="#FFDEE1E8" SelectionBrush="#FF919191" Padding="0" TextAlignment="Center" KeyUp="inputBox_KeyUp"/>
+        </Grid>
+    </Grid>
+</Window>

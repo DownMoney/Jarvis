@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sentences>
+  <Sentence type="greeting" weight="0.50">
+    <Phrase>hello</Phrase>
+    <Phrase>hi</Phrase>
+  </Sentence>
+  <Sentence type="response" weight="0.90">
+    <Phrase>i am well thank you</Phrase>
+    <Phrase>i am good</Phrase>
+  </Sentence>
+  <Sentence type="howareyou" weight="1.00">
+    <Phrase>how are you</Phrase>
+    <Phrase>how are you {programName}</Phrase>
+    <Phrase>how you been</Phrase>
+    <Phrase>how're you</Phrase>
+  </Sentence>
+  <Sentence type="attention" weight="1.00">
+    <Phrase>{programName}</Phrase>
+    <Phrase>good {wild} {programName}</Phrase>
+    <Phrase>ok {programName}</Phrase>
+    <Phrase>wake up {programName}</Phrase>
+  </Sentence>
+  <Sentence type="rest" weight="1.00">
+    <Phrase>thank you</Phrase>
+    <Phrase>that will be all</Phrase>
+    <Phrase>that'll be all</Phrase>
+    <Phrase>you can rest now</Phrase>
+    <Phrase>shut up {programName}</Phrase>
+  </Sentence>
+  <Sentence type="movies" weight="1.00">
+    <Phrase>i would like to watch a film</Phrase>
+    <Phrase>i would like to watch a movie</Phrase>
+    <Phrase>how about some films</Phrase>
+  </Sentence>
+  <Sentence type="movies|playpausefilm" weight="1.00">
+    <Phrase>pause movie</Phrase>
+    <Phrase>pause film</Phrase>
+    <Phrase>pause the current movie</Phrase>
+    <Phrase>pause the current film</Phrase>
+    <Phrase>play movie</Phrase>
+    <Phrase>play film</Phrase>
+    <Phrase>play current film</Phrase>
+    <Phrase>play current movie</Phrase>
+    <Phrase>resume film</Phrase>
+    <Phrase>resume movie</Phrase>
+    <PhrasE>resume the current film</PhrasE>
+    <Phrase>resume the current movie</Phrase>
+  </Sentence>
+  <Sentence type="breakfast" weight="0.90">
+    <Phrase>what's for breakfast</Phrase>
+  </Sentence>
+  <Sentence type="dictation" weight="0.50">
+    <Phrase>remind me {dict} please</Phrase>  
+  </Sentence>
+  <Sentence type="email" weight="1.00">
+    <Phrase>send the following email to {dict} thanks</Phrase>
+  </Sentence>
+  <Sentence type="movies|fullscreen" weight="1.00">
+    <Phrase>play in fullscreen</Phrase>
+    <Phrase>play in full screen</Phrase>
+    <Phrase>exit fullscreen</Phrase>
+    <Phrase>exit full screen</Phrase>
+  </Sentence>
+  <Sentence type="movies|mute" weight="1.00">
+    <Pharse>mute film</Pharse>
+    <Phrase>unmute film</Phrase>
+    <Pharse>mute movie</Pharse>
+    <Phrase>unmute movie</Phrase>
+  </Sentence>
+  <Sentence type="weather" weight="1.00">
+    <Phrase>what is the temperature</Phrase>
+  </Sentence>
+  <Sentence type="knowledge|report" weight="1.00">
+    <Phrase>compile a report on {dict} please</Phrase>
+    <Phrase>compose a report on {dict} please</Phrase>
+    <Phrase>tell me about {dict} please</Phrase>
+  </Sentence>
+  <Sentence type="alarm" weight="1.00">
+    <Phrase>i would like to set an alarm</Phrase>
+  </Sentence>
+</Sentences>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Tagger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Grid Margin="0,0,122,0" x:Name="sourceGrid">
+            <RichTextBox x:Name="inputBox" Margin="0,0,0,35" TextChanged="RichTextBox_TextChanged"></RichTextBox>
+            
+        </Grid>
+        <Grid x:Name="workGrid" Margin="0,0,122,0">
+            
+        </Grid>
+        <Button Content="Save" HorizontalAlignment="Left" Height="25" Margin="148,289,0,0" VerticalAlignment="Top" Width="69" x:Name="SaveBtn" Click="SaveBtn_Click"/>
+        <Grid Margin="400,0,0,0" HorizontalAlignment="Right">
+            <ComboBox HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="112" x:Name="Categories" SelectionChanged="Categories_SelectionChanged"/>
+            <Grid Margin="0,40,0,0" x:Name="controlsGrid"></Grid>
+            </Grid>
+    </Grid>
+</Window>

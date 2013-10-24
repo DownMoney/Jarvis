@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sentences>
+  <Sentence type="alarm|set" weight="1.00">
+    <Phrase>{time}</Phrase>
+    <Phrase>for {time}</Phrase>
+  </Sentence>
+</Sentences>

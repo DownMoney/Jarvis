@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Brain>
+  <HMM Tag="people">
+    <Model State="start">
+      <Link>name</Link>
+      <Link>bg</Link>
+      <Link>end</Link>
+      <Link>prefix</Link>
+    </Model>
+    <Model State="bg">
+      <Link>prefix</Link>
+      <Link>bg</Link>
+      <Link>name</Link>
+    </Model>
+    <Model State="suffix">
+      <Link>bg</Link>
+      <Link>end</Link>
+    </Model>
+    <Model State="connector">
+      <Link>name</Link>
+      <Link>prefix</Link>
+    </Model>
+    <Model State="prefix">
+      <Link>name</Link>
+    </Model>
+    <Model State="surname">
+      <Link>suffix</Link>
+      <Link>end</Link>
+      <Link>connector</Link>
+    </Model>
+    <Model State="name">
+      <Link>suffix</Link>
+      <Link>end</Link>
+      <Link>connector</Link>
+      <Link>surname</Link>
+    </Model>
+    <TrainingData>
+      <Data>/I/name /went/suffix /to/bg /London/bg /last/bg /year/bg /with/bg /Tim/name</Data>
+      <Data>/My/prefix /dad/name /is/suffix /awesome/bg</Data>
+      <Data>/Last/bg /night/bg /Jim/name /was/suffix /asked/bg /to/bg /stay/bg /later/bg</Data>
+      <Data>/Harry/name /is/suffix /awesome/bg</Data>
+      <Data>/He/name /lives/suffix</Data>
+      <Data>/Tom/name /and/connector /Tim/name /like/suffix /to/bg /dance/bg</Data>
+      <Data>/Jim/name /Kerry/surname /says/suffix /something/bg</Data>
+      <Data>/Steve/name /loves/suffix /jam/bg</Data>
+      <Data>/Nick/name /Clegg/surname //"can't/suffix/bg /foresee/bg /any/bg /circumstances"/bg /under/bg /which/bg /MPs/bg /would/bg /vote/bg /again/bg /on/bg /Syria/bg /action/bg /-/bg /after/prefix /Boris/name /Johnson/surname /argued/suffix /there/bg /could/bg /be/bg /a/bg /fresh/bg /debate.
+/bg</Data>
+      <Data>/Gareth/name /Bale/surname /is/suffix /unveiled/bg /to/bg /Real/bg /Madrid/bg /supporters/bg /following/bg /his/bg /world/bg /record/bg /£85.3m/bg /(100m/bg /euros)/bg /transfer/bg /from/bg /Tottenham
+/bg</Data>
+      <Data>/Sir/prefix /Michael/name /Parkinson/surname /has/suffix /led/bg /the/bg /tributes/bg /to/bg /broadcaster/bg /and/bg /writer/bg /Sir/prefix /David/name /Frost/surname /who/suffix /died/bg /at/bg /the/bg /age/bg /of/bg /74/bg /on/bg /Saturday/bg /following/bg /a/bg /heart/bg /attack
+/bg</Data>
+      <Data>/Sir/prefix /David/name /had/suffix /a/bg /heart/bg /attack/bg /while/bg /on/bg /board/bg /the/bg /Queen/bg /Elizabeth/bg /cruise/bg /ship
+/bg</Data>
+      <Data>/In/bg /a/bg /speech/bg /in/bg /Hammersmith/bg /west/bg /London/bg /Mr/prefix /Clegg/surname /said/suffix /the/bg /government/bg /would/bg /increase/bg /the/bg /money/bg /invested/bg /in/bg /the/bg /scheme/bg /to/bg /£760m/bg /in/bg /2014/15
+/bg</Data>
+      <Data>/But/bg /Anand/name /Shukla/surname /head/suffix /of/bg /national/bg /charity/bg /the/bg /Family/bg /and/bg /Childcare/bg /Trust/bg /said:/bg /We/bg /are/bg /concerned/bg /that/bg /the/bg /loss/bg /of/bg /nursery/bg /provision/bg /in/bg /children's/bg /centres/bg /is/bg /impacting/bg /on/bg /local/bg /authorities'/bg /ability/bg /to/bg /find/bg /sufficient/bg /places/bg /for/bg /the/bg /offer
+/bg</Data>
+      <Data>/Neil/name /Leitch/surname /of/suffix /the/bg /Preschool/bg /Learning/bg /Alliance/bg /charity/bg /said/bg /it/bg /was/bg /a/bg /tremendous/bg /initiative/bg /but/bg /must/bg /be/bg /properly/bg /funded/bg /if/bg /Mr/prefix /Clegg/surname /was/suffix /to/bg /achieve/bg /the/bg /brighter/bg /start/bg /in/bg /life/bg /for/bg /these/bg /children/bg /that/bg /he/bg /wants
+/bg</Data>
+      <Data>/Melissa/name /Reid/surname /of/suffix /Lenzie/bg /near/bg /Glasgow/bg /and/bg /Michaella/name /McCollum/surname /of/suffix /Dungannon/bg /in/bg /Northern/bg /Ireland/bg /were/bg /caught/bg /with/bg /£15m/bg /of/bg /cocaine/bg /at/bg /Lima/bg /Airport
+/bg</Data>
+    </TrainingData>
+  </HMM>
+  <HMM Tag="location">
+    <Model State="start">
+      <Link>location</Link>
+      <Link>bg</Link>
+      <Link>end</Link>
+      <Link>prefix</Link>
+    </Model>
+    <Model State="bg">
+      <Link>prefix</Link>
+      <Link>bg</Link>
+      <Link>location</Link>
+    </Model>
+    <Model State="suffix">
+      <Link>bg</Link>
+      <Link>end</Link>
+    </Model>
+    <Model State="prefix">
+      <Link>location</Link>
+      <Link>prefix</Link>
+    </Model>
+    <Model State="location">
+      <Link>suffix</Link>
+      <Link>end</Link>
+    </Model>
+    <TrainingData>
+      <Data>/Canada/location /is/suffix /huge/bg</Data>
+      <Data>/It/bg /was/bg /raining/prefix /in/prefix /London/location /today/suffix</Data>
+      <Data>/In/prefix /Edinburgh/location</Data>
+      <Data>/Nick/bg /Clegg/bg /can't/bg /foresee/bg /any/bg /circumstances/bg /under/bg /which/bg /MPs/bg /would/bg /vote/bg /again/bg /on/prefix /Syria/location /action/bg /-/bg /after/bg /Boris/bg /Johnson/bg /argued/bg /there/bg /could/bg /be/bg /a/bg /fresh/bg /debate.
+/bg</Data>
+      <Data>/Gareth/bg /Bale/bg /is/bg /unveiled/bg /to/prefix /Real/location /Madrid/location /supporters/bg /following/bg /his/bg /world/bg /record/bg /£85.3m/bg /(100m/bg /euros)/bg /transfer/bg /from/prefix /Tottenham
+/location</Data>
+      <Data>/In/bg /a/bg /speech/bg /in/bg /Hammersmith/bg /west/prefix /London/location /Mr/bg /Clegg/bg /said/bg /the/bg /government/bg /would/bg /increase/bg /the/bg /money/bg /invested/bg /in/bg /the/bg /scheme/bg /to/bg /£760m/bg /in/bg /2014/15
+/bg</Data>
+      <Data>/The/bg /father/bg /of/bg /one/bg /of/bg /two/bg /women/bg /from/prefix /the/prefix /UK/location /held/bg /in/bg /Peru/bg /on/bg /drug/bg /smuggling/bg /charges/bg /has/bg /called/bg /on/bg /British/bg /and/bg /Spanish/bg /police/bg /to/bg /investigate/bg /the/bg /case
+/bg</Data>
+      <Data>/Melissa/bg /Reid/bg /of/bg /Lenzie/bg /near/prefix /Glasgow/location /and/bg /Michaella/bg /McCollum/bg /of/prefix /Dungannon/location /in/prefix /Northern/location /Ireland/location /were/bg /caught/bg /with/bg /£15m/bg /of/bg /cocaine/bg /at/prefix /Lima/location /Airport
+/location</Data>
+      <Data>/Five/bg /boys/bg /have/bg /been/bg /arrested/bg /after/bg /fire/bg /destroyed/bg /a/bg /school/bg /in/prefix /Lancashire
+/location</Data>
+    </TrainingData>
+  </HMM>
+</Brain>

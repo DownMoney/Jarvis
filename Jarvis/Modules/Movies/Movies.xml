@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sentences>
+   <Sentence type="movies|playfilm" weight="1.00">
+     <Phrase>play {filmName}</Phrase>
+     <Phrase>{filmName}</Phrase>
+  </Sentence>
+  <Sentence type="movies|showfilms" weight="1.00">
+    <Phrase>show me my films</Phrase>
+    <Phrase>what films do i have</Phrase>
+  </Sentence>
+  <Sentence type="movies|choosefilm" weight="1.00">
+    <Phrase>i don't know you choose</Phrase>
+    <Phrase>pick a film for me</Phrase>
+  </Sentence>
+</Sentences>

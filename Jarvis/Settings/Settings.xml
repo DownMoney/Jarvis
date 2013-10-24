@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <Setting type="programName">jarvis</Setting>
+  <Setting type="recThreshHold">0.70</Setting>
+  <Setting type="userName">user</Setting>
+  <Setting type="pronoun">sir</Setting>
+  <Setting type="xbmcPath">C:\Program Files (x86)\XBMC\XBMC.exe</Setting>
+  <Setting type="movieExt">.avi|.mkv|.aaf|.3gp|.gif|.asf|.avchd|.cam|.flv|.mpeg|.m4v|.mov|.mpg|.mpe|.ogg|.wmv</Setting>
+  <Setting type="movieDirs">D:\Movies</Setting>
+</Settings>

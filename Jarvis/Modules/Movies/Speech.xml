@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sentences>
+  <Sentence type="playfilm">
+    <Phrase>playing the film</Phrase>
+    <Phrase>playing the movie</Phrase>
+    <Phrase>i hope that you will enjoy that movie {pronoun}</Phrase>
+    <Phrase>i hope that you will enjoy that film {pronoun}</Phrase>
+  </Sentence>
+  <Sentence type="choosefilm">
+    <Phrase>ok {pronoun}, i will try to do my best</Phrase>
+    <Phrase>right away {pronoun}</Phrase>
+  </Sentence>
+</Sentences>
